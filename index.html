@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
  </head>
  <body>
     <section id="landing">
@@ -18,6 +19,25 @@
                 <li><a href="#"class="nav__link">Contact</a></li>
                 <li><a href="#"class="nav__link nav__link--primary" >Books</a></li>
             </ul>
+            <button class="btn__menu" onclick="openMenu()">
+                <i class="fas fa-bars"></i>
+              </button>
+              <div class="menu__backdrop">
+                <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                    <i class="fas fa-times"></i>
+                </button>
+                <ul class="menu__links">
+                    <li class="menu__list">
+                        <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="#features" class="menu__link" onclick="closeMenu()">Books</a>
+                    </li>
+                    <li class="menu__list">
+                        <a class="menu__link no-cursor" onclick="closeMenu()">Contact</a>
+                    </li>
+                </ul>
+          </div>
           </div>
         </nav>
         <header>
@@ -25,7 +45,9 @@
                 <div class="header__description">
                     <h1>The most highly reviewed online platform</h2>
                     <h2>Find your dream book on <span class="text--purple">Library</span></h3>
-                    <button class="btn">Browse Books</button>
+                        <a href="#features">
+                        <button class="btn">Browse Books</button></a>
+                
                 </div>
                 <figure class="header__img--wrapper">
                     <img src="./assets/Undraw_Books.svg" class="undrawpic" alt="">
@@ -327,8 +349,9 @@
                 Explore more <span class="text--purple">Books</span>
             </h2>
             <div class="button__wrapper">
-            <button class="btn">Browse books</button>
-            </div>
+            <a href="#features">
+            <button class="btn">Browse books</button></a>
+        </div>
         </div>
     </div>
  </section>
@@ -343,11 +366,14 @@
             </div>
             <div>
                 <ul class="footer__links">
-                    <li><a href="#" class="footer__link"></a> Home</li>
-                    <li><a href="#"class="footer__link"></a>About</li>
-                    <li><a href="#"class="footer__link"></a>Books</li>
-                    <li><a href="#"class="footer__link"></a>Contact</li>
+                    <li><a href="#" class="footer__link">Home</a></li>
+                    <li><a href="#"class="footer__link no-cursor">About</a></li>
+                    <li><a href="#features"class="footer__link">Books</a></li>
+                    <li><a href="#"class="footer__link no-cursor" >Contact</a></li>
                 </ul>
+                    <p class="copyright">
+                        Copyright© 2023 Library
+                    </p>
             </div>
         </div>
     </div>
