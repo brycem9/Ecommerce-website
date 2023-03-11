@@ -8,6 +8,7 @@
 
 html {
      scroll-behavior: smooth;
+     overflow-x: hidden;
 }
 
 body {
@@ -460,4 +461,9 @@ button:active {
       .highlight__subtitle {
           margin-bottom: 8px;
       }    
+
+      .footer__link {
+          padding: 0 24px;
+      }
 }
+
