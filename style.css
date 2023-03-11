@@ -65,6 +65,10 @@ li {
      padding: 8px;
 }
 
+.nav__contact {
+     cursor: not-allowed;
+}
+
 .nav__link:hover {
      text-decoration: underline;
 }
@@ -250,6 +254,7 @@ button:active {
 
 .highlight__wrapper {
      display: flex;
+     flex-wrap: wrap;
 }
 
 .highlight {
@@ -257,13 +262,16 @@ button:active {
      width: calc(100 / 3);
      display: flex;
      align-items: center;
-     justify-content: center;
      flex-direction: column;
 }
 
 .highlight__para {
      text-align: center;
      max-width: 280px;
+}
+
+.highlight__subtitle {
+     text-align: center;
 }
 
 .highlight__img {
@@ -398,6 +406,8 @@ button:active {
      cursor: not-allowed;
 }
 
+/*SMALL PHONES, TABLETS< SMARTPHONES*/
+
 @media (max-width: 550px) {
      .nav__links {
           display: none;
@@ -406,4 +416,48 @@ button:active {
      .btn__menu {
           display: block;
      }
+}
+
+/*SMALL PHONES, TABLETS< SMARTPHONES*/
+
+@media (max-width: 768px) {
+     .header__description {
+          padding: 0 24px;
+     }
+     
+     h1 {
+          font-size: 40px;
+     }
+          
+     h2 {
+          font-size: 26px;
+     }
+
+     button {
+          font-size: 18px;
+     }
+
+     .book {
+          width: 50%;
+     }
+
+     .books {
+          width: 50;
+          flex-wrap: wrap;
+          justify-content: center;
+     }
+    
+          
+     .highlight {
+          width: 100%;
+          
+     }
+
+     .highlight:not(:last-child) {
+          margin-bottom: 24px;
+     }
+
+      .highlight__subtitle {
+          margin-bottom: 8px;
+      }    
 }
