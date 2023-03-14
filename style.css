@@ -465,5 +465,10 @@ button:active {
       .footer__link {
           padding: 0 24px;
       }
+
+      .highlight__wrapper {
+          display: flex;
+          flex-wrap: wrap;
+      }
 }
 
